@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formats & styles — Bratislava Cakes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page home-page catalog-page formats-page">
+    <header class="top-nav">
+      <a href="index.html" class="nav-logo">Bratislava.Cakes</a>
+      <nav class="nav-links">
+        <a href="index.html" class="home-icon-link" aria-label="Home">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3.5 10.7 12 3.8l8.5 6.9v8.1a1.7 1.7 0 0 1-1.7 1.7H5.2a1.7 1.7 0 0 1-1.7-1.7v-8.1Z"></path>
+            <path d="M9 20.5v-6h6v6"></path>
+          </svg>
+        </a>
+        <a href="fillings.html" class="current" data-i18n="navFillings">Flavours</a>
+        <a href="info.html" data-i18n="navInfo">About</a>
+        <a href="reviews.html" data-i18n="navReviews">Reviews</a>
+      </nav>
+      <div class="language-switcher">
+        <button class="language-option active" data-lang="en">EN</button>
+        <span>·</span>
+        <button class="language-option" data-lang="uk">UA</button>
+        <span>·</span>
+        <button class="language-option" data-lang="sk">SK</button>
+      </div>
+    </header>
+
+    <section class="catalog-hero">
+      <a href="fillings.html" class="catalog-breadcrumb" data-i18n="backFlavours">← All flavours</a>
+      <p class="hero-kicker" data-i18n="formatsKicker">Choose the mood</p>
+      <h1 data-i18n="formatsTitle">Formats & styles</h1>
+      <p data-i18n="formatsIntro">From elegant layered cakes to tiny bento surprises — choose the format that fits the moment.</p>
+    </section>
+
+    <section class="format-grid" aria-label="Formats and styles">
+      <article class="format-card">
+        <figure class="format-photo" style="--format-photo: url('images/formats/classic-white-black-gold.jpeg')">
+          <img class="format-image-classic" src="images/formats/classic-white-black-gold.jpeg" alt="Classic white cake with black and gold birthday details">
+        </figure>
+        <div class="format-card-copy">
+          <span>01</span>
+          <h2 data-i18n="formatClassicTitle">Classic cakes</h2>
+          <p data-i18n="formatClassicText">Round layered cakes for birthdays, family celebrations and elegant sweet tables.</p>
+        </div>
+      </article>
+
+      <article class="format-card">
+        <figure class="format-photo" style="--format-photo: url('images/formats/bento-pink-brush.jpeg')">
+          <img class="format-image-bento" src="images/formats/bento-pink-brush.jpeg" alt="Pink bento cake with soft brush decoration">
+        </figure>
+        <div class="format-card-copy">
+          <span>02</span>
+          <h2 data-i18n="formatBentoTitle">Bento cakes</h2>
+          <p data-i18n="formatBentoText">Small personal cakes with a cute minimal design — perfect for a little surprise or a cozy celebration.</p>
+        </div>
+      </article>
+
+      <article class="format-card format-featured">
+        <figure class="format-photo" style="--format-photo: url('images/formats/mousse-white-bento.jpeg')">
+          <img class="format-image-mousse" src="images/formats/mousse-white-bento.jpeg" alt="White mousse cake with a soft modern shape">
+        </figure>
+        <div class="format-card-copy">
+          <span>03</span>
+          <h2 data-i18n="formatMousseTitle">Mousse cakes</h2>
+          <p data-i18n="formatMousseText">Smooth, delicate cakes with a modern finish and a light texture.</p>
+        </div>
+      </article>
+
+      <article class="format-card format-wide">
+        <figure class="format-photo" style="--format-photo: url('images/formats/red-mousse-bento-set.jpeg')">
+          <img class="format-image-set" src="images/formats/red-mousse-bento-set.jpeg" alt="Red mousse bento set with matching pastries">
+        </figure>
+        <div class="format-card-copy">
+          <span>04</span>
+          <h2 data-i18n="formatBentoSetTitle">Bento set</h2>
+          <p data-i18n="formatBentoSetText">A small bento cake with matching cupcakes — a sweet little set in one style.</p>
+        </div>
+      </article>
+    </section>
+
+    <a href="fillings.html" class="about-back" data-i18n="backFlavours">← All flavours</a>
+
+    <footer class="contacts">
+      <p data-i18n="contactText">Contact me</p>
+      <div class="contact-links">
+        <a href="https://www.instagram.com/torty_bratislava_?igsh=MTR3NGNseXhjaHdnbg==" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/Ilonatortybratislava" target="_blank">Facebook</a>
+        <a href="https://t.me/Lol_ita_18" target="_blank">Telegram</a>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

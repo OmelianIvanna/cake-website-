@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore cake flavours, fillings and combinations.">
+  <title>Flavours — Bratislava Cakes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page home-page flavours-page">
+    <header class="top-nav">
+      <a href="index.html" class="nav-logo" aria-label="Bratislava Cakes home">Bratislava.Cakes</a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="home-icon-link" aria-label="Home" title="Home">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3.5 10.7 12 3.8l8.5 6.9v8.1a1.7 1.7 0 0 1-1.7 1.7H5.2a1.7 1.7 0 0 1-1.7-1.7v-8.1Z"></path>
+            <path d="M9 20.5v-6h6v6"></path>
+          </svg>
+        </a>
+        <a href="fillings.html" class="current" data-i18n="navFillings">Flavours</a>
+        <a href="info.html" data-i18n="navInfo">About</a>
+        <a href="reviews.html" data-i18n="navReviews">Reviews</a>
+      </nav>
+
+      <div class="language-switcher" aria-label="Choose language">
+        <button class="language-option active" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">·</span>
+        <button class="language-option" type="button" data-lang="uk" aria-pressed="false">UA</button>
+        <span aria-hidden="true">·</span>
+        <button class="language-option" type="button" data-lang="sk" aria-pressed="false">SK</button>
+      </div>
+    </header>
+
+    <section class="flavours-hero">
+      <p class="hero-kicker" data-i18n="flavoursKicker">Find your favourite</p>
+      <h1 data-i18n="flavoursTitle">Flavours &<br>combinations</h1>
+    </section>
+
+    <section class="flavour-categories" aria-label="Flavour categories">
+      <a href="biscuits.html" class="flavour-category">
+        <span class="category-index">01</span>
+        <h2 data-i18n="categorySponge">Sponge cakes</h2>
+        <span class="category-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a href="popular.html" class="flavour-category">
+        <span class="category-index">02</span>
+        <h2 data-i18n="categoryPopular">Popular flavours</h2>
+        <span class="category-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a href="fruits.html" class="flavour-category">
+        <span class="category-index">03</span>
+        <h2 data-i18n="categoryFruit">Fruit fillings</h2>
+        <span class="category-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a href="classic.html" class="flavour-category">
+        <span class="category-index">04</span>
+        <h2 data-i18n="categoryClassic">Classic cakes</h2>
+        <span class="category-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a href="shapes.html" class="flavour-category">
+        <span class="category-index">05</span>
+        <h2 data-i18n="categoryShapes">Formats & styles</h2>
+        <span class="category-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a href="desserts.html" class="flavour-category">
+        <span class="category-index">06</span>
+        <h2 data-i18n="categoryDesserts">Desserts & sweets</h2>
+        <span class="category-arrow" aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <a href="index.html" class="about-back" data-i18n="backHome">← Back home</a>
+
+    <footer class="contacts">
+      <p data-i18n="contactText">Contact me</p>
+      <div class="contact-links">
+        <a href="https://www.instagram.com/torty_bratislava_?igsh=MTR3NGNseXhjaHdnbg==" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/Ilonatortybratislava" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://t.me/Lol_ita_18" target="_blank" rel="noopener noreferrer">Telegram</a>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

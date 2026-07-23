@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desserts & sweets — Bratislava Cakes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page home-page catalog-page desserts-page">
+    <header class="top-nav">
+      <a href="index.html" class="nav-logo">Bratislava.Cakes</a>
+      <nav class="nav-links">
+        <a href="index.html" class="home-icon-link" aria-label="Home">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3.5 10.7 12 3.8l8.5 6.9v8.1a1.7 1.7 0 0 1-1.7 1.7H5.2a1.7 1.7 0 0 1-1.7-1.7v-8.1Z"></path>
+            <path d="M9 20.5v-6h6v6"></path>
+          </svg>
+        </a>
+        <a href="fillings.html" class="current" data-i18n="navFillings">Flavours</a>
+        <a href="info.html" data-i18n="navInfo">About</a>
+        <a href="reviews.html" data-i18n="navReviews">Reviews</a>
+      </nav>
+      <div class="language-switcher">
+        <button class="language-option active" data-lang="en">EN</button>
+        <span>·</span>
+        <button class="language-option" data-lang="uk">UA</button>
+        <span>·</span>
+        <button class="language-option" data-lang="sk">SK</button>
+      </div>
+    </header>
+
+    <section class="catalog-hero">
+      <a href="fillings.html" class="catalog-breadcrumb" data-i18n="backFlavours">← All flavours</a>
+      <p class="hero-kicker" data-i18n="dessertsKicker">Small sweets for gentle moments</p>
+      <h1 data-i18n="dessertsTitle">Desserts & sweets</h1>
+      <p data-i18n="dessertsIntro">A separate little collection for pastries, slices and smaller desserts.</p>
+    </section>
+
+    <section class="desserts-section">
+      <div class="catalog-gallery collection-grid dessert-gallery">
+        <article class="catalog-item">
+          <img src="images/desserts/biscvitnitistecka-f6bfd3.png" alt="Sponge cake pastries">
+          <div class="catalog-copy"><span>01</span><h2 data-i18n="dessertSpongePastries">Sponge pastries</h2><p data-i18n="dessertSpongePastriesText">Soft sponge pieces with cream and delicate decoration.</p></div>
+        </article>
+        <article class="catalog-item">
+          <img src="images/desserts/musovitistecka-f6bfd3.png" alt="Mousse pastries">
+          <div class="catalog-copy"><span>02</span><h2 data-i18n="dessertMoussePastries">Mousse pastries</h2><p data-i18n="dessertMoussePastriesText">Light mousse desserts with a smooth, modern texture.</p></div>
+        </article>
+        <article class="catalog-item" id="dessert-cupcake">
+          <img src="images/desserts/capcake-f6bfd3.png" alt="Cupcake">
+          <div class="catalog-copy"><span>03</span><h2 data-i18n="dessertCupcake">Cupcake</h2><p data-i18n="dessertCupcakeText">Small sponge cakes with cream and decorative tops.</p></div>
+        </article>
+        <article class="catalog-item">
+          <img src="images/desserts/chizcake-f6bfd3-v2.png" alt="Cheesecake">
+          <div class="catalog-copy"><span>04</span><h2 data-i18n="dessertCheesecake">Cheesecake</h2><p data-i18n="dessertCheesecakeText">Creamy, soft and balanced with a gentle cheese note.</p></div>
+        </article>
+        <article class="catalog-item">
+          <img src="images/desserts/pavlova-f6bfd3-centered.png" alt="Pavlova">
+          <div class="catalog-copy"><span>05</span><h2 data-i18n="dessertPavlova">Pavlova</h2><p data-i18n="dessertPavlovaText">Crisp meringue, soft centre and a light cream finish.</p></div>
+        </article>
+        <article class="catalog-item">
+          <img src="images/desserts/gorisokzguscenummilk-f6bfd3.png" alt="Nut cookie with condensed milk">
+          <div class="catalog-copy"><span>06</span><h2 data-i18n="dessertNutCondensed">Nut cookie</h2><p data-i18n="dessertNutCondensedText">A small nut-shaped sweet with a creamy condensed milk filling.</p></div>
+        </article>
+        <article class="catalog-item">
+          <img src="images/desserts/tartaletka-f6bfd3-v2.png" alt="Tartlet">
+          <div class="catalog-copy"><span>07</span><h2 data-i18n="dessertTartlet">Tartlet</h2><p data-i18n="dessertTartletText">A crisp base with cream and fruit or chocolate accents.</p></div>
+        </article>
+        <article class="catalog-item">
+          <img src="images/desserts/tistechkoshu-f6bfd3.png" alt="Choux pastry">
+          <div class="catalog-copy"><span>08</span><h2 data-i18n="dessertChoux">Choux pastry</h2><p data-i18n="dessertChouxText">Light pastry shells with a soft cream filling.</p></div>
+        </article>
+        <article class="catalog-item">
+          <img src="images/desserts/trajfl-f6bfd3.png" alt="Trifle">
+          <div class="catalog-copy"><span>09</span><h2 data-i18n="dessertTrifle">Trifle</h2><p data-i18n="dessertTrifleText">Layers of sponge, cream and fruit in a soft dessert cup.</p></div>
+        </article>
+        <article class="catalog-item dessert-roll-card">
+          <img src="images/desserts/ruletubiscvitnuormerengovi-f6bfd3-v6.png" alt="Sponge or meringue rolls">
+          <div class="catalog-copy"><span>10</span><h2 data-i18n="dessertRolls">Sponge or meringue rolls</h2><p data-i18n="dessertRollsText">Rolled desserts with airy texture and cream filling.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <a href="fillings.html" class="about-back" data-i18n="backFlavours">← All flavours</a>
+
+    <footer class="contacts">
+      <p data-i18n="contactText">Contact me</p>
+      <div class="contact-links">
+        <a href="https://www.instagram.com/torty_bratislava_?igsh=MTR3NGNseXhjaHdnbg==" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/Ilonatortybratislava" target="_blank">Facebook</a>
+        <a href="https://t.me/Lol_ita_18" target="_blank">Telegram</a>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

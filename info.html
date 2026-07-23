@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Bratislava Cakes and how each cake is prepared.">
+  <title>About — Bratislava Cakes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page home-page about-page">
+    <header class="top-nav">
+      <a href="index.html" class="nav-logo" aria-label="Bratislava Cakes home">Bratislava.Cakes</a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="home-icon-link" aria-label="Home" title="Home">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3.5 10.7 12 3.8l8.5 6.9v8.1a1.7 1.7 0 0 1-1.7 1.7H5.2a1.7 1.7 0 0 1-1.7-1.7v-8.1Z"></path>
+            <path d="M9 20.5v-6h6v6"></path>
+          </svg>
+        </a>
+        <a href="fillings.html" data-i18n="navFillings">Flavours</a>
+        <a href="info.html" class="current" data-i18n="navInfo">About</a>
+        <a href="reviews.html" data-i18n="navReviews">Reviews</a>
+      </nav>
+
+      <div class="language-switcher" aria-label="Choose language">
+        <button class="language-option active" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">·</span>
+        <button class="language-option" type="button" data-lang="uk" aria-pressed="false">UA</button>
+        <span aria-hidden="true">·</span>
+        <button class="language-option" type="button" data-lang="sk" aria-pressed="false">SK</button>
+      </div>
+    </header>
+
+    <section class="about-hero">
+      <p class="hero-kicker" data-i18n="aboutKicker">A little about the cakes</p>
+      <h1 data-i18n="aboutTitle">Made slowly.<br>Remembered fondly.</h1>
+      <p class="about-intro" data-i18n="aboutIntro">
+        This gallery brings together cakes I create by hand in Bratislava — with balanced flavours, clean finishes and details that make each one feel personal.
+      </p>
+    </section>
+
+    <section class="about-grid">
+      <article class="about-card about-card-featured">
+        <span class="about-number">01</span>
+        <div>
+          <h2 data-i18n="aboutTimeTitle">A little time makes all the difference</h2>
+          <p data-i18n="aboutTimeText">
+            It is best to get in touch at least five days ahead. If your date is closer, feel free to ask — what is possible will depend on the time and ingredients available.
+          </p>
+        </div>
+        <strong class="days-note" data-i18n="aboutDays">5 days ahead is ideal</strong>
+      </article>
+
+      <article class="about-card about-card-ingredients">
+        <span class="about-number">02</span>
+        <div>
+          <h2 data-i18n="aboutFlavourTitle">Flavour comes first</h2>
+          <p data-i18n="aboutFlavourText">
+            Every combination is considered as a whole, so the sponge, filling and texture complement one another rather than compete.
+          </p>
+        </div>
+      </article>
+
+      <article class="about-card about-card-cream">
+        <span class="about-number">03</span>
+        <div>
+          <h2 data-i18n="aboutDetailsTitle">The details are personal</h2>
+          <p data-i18n="aboutDetailsText">
+            Colours, decoration and the overall mood can be discussed individually. Please always mention any allergies or dietary requirements.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <a href="index.html" class="about-back" data-i18n="backHome">← Back home</a>
+
+    <footer class="contacts">
+      <p data-i18n="contactText">Contact me</p>
+      <div class="contact-links">
+        <a href="https://www.instagram.com/torty_bratislava_?igsh=MTR3NGNseXhjaHdnbg==" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/Ilonatortybratislava" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://t.me/Lol_ita_18" target="_blank" rel="noopener noreferrer">Telegram</a>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
