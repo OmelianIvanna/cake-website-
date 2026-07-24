@@ -2668,12 +2668,13 @@ body.lightbox-open {
 .story-reviews-section {
   position: relative;
   width: 100%;
+  height: 100%;
+  min-height: 0;
   margin: 0;
   padding: 10px;
-  display: grid;
-  grid-template-rows: auto minmax(0, 1fr) auto;
-  align-items: stretch;
-  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background:
     linear-gradient(145deg, rgba(255, 250, 247, 0.72), rgba(255, 255, 255, 0.5));
   border: 1px solid rgba(166, 89, 109, 0.18);
@@ -2694,15 +2695,20 @@ body.lightbox-open {
 }
 
 .story-reviews-heading {
-  margin-bottom: 0;
+  margin-bottom: 6px;
+  flex: 0 0 auto;
   text-align: left;
 }
 
 .story-reviews-grid {
+  flex: 0 0 auto;
+  min-height: 0;
   display: grid;
   grid-template-columns: 1fr;
-  align-content: space-between;
-  gap: 8px;
+  grid-template-rows: repeat(4, minmax(84px, auto));
+  align-content: start;
+  gap: 9px;
+  margin-bottom: 14px;
 }
 
 .story-reviews-grid::-webkit-scrollbar {
@@ -2713,11 +2719,12 @@ body.lightbox-open {
   position: relative;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 56px 1fr;
+  grid-template-columns: 64px minmax(0, 1fr);
   align-items: center;
-  gap: 6px;
-  min-height: 68px;
-  padding: 6px 7px;
+  gap: 10px;
+  min-height: 84px;
+  height: 100%;
+  padding: 9px 10px;
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(33, 26, 28, 0.11);
   border-radius: 18px;
@@ -2748,8 +2755,8 @@ body.lightbox-open {
 }
 
 .story-review-card img {
-  width: 56px;
-  height: 54px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
   object-position: center;
   background: rgba(255, 255, 255, 0.82);
@@ -2759,9 +2766,10 @@ body.lightbox-open {
 }
 
 .story-review-card p {
-  color: rgba(33, 26, 28, 0.76);
-  font-size: 10.2px;
-  line-height: 1.24;
+  padding-right: 20px;
+  color: rgba(33, 26, 28, 0.9);
+  font-size: 13px;
+  line-height: 1.38;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -2773,13 +2781,13 @@ body.lightbox-open {
   justify-self: start;
   width: fit-content;
   margin-top: -4px;
-  padding: 3px 8px;
+  padding: 4px 11px;
   color: var(--dark-pink);
   background: rgba(243, 213, 221, 0.44);
   border: 1px solid rgba(166, 89, 109, 0.14);
   border-radius: 999px;
   font: inherit;
-  font-size: 9.5px;
+  font-size: 10.5px;
   font-weight: 800;
   cursor: pointer;
   transition: 0.18s ease;
@@ -2793,9 +2801,11 @@ body.lightbox-open {
 }
 
 .story-highlight-row {
-  margin-top: 0;
-  padding: 7px 10px;
-  align-self: center;
+  margin-top: auto;
+  flex: 0 0 auto;
+  min-height: 58px;
+  padding: 10px 14px;
+  align-self: stretch;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2952,14 +2962,15 @@ body.lightbox-open {
 }
 
 .reviews-board .most-loved-heading h2 {
-  font-size: 19px;
+  font-size: 22px;
+  line-height: 1.02;
 }
 
 .reviews-board .most-loved-heading > p:last-child {
-  max-width: 310px;
-  margin: 5px 0 0;
-  font-size: 10.5px;
-  line-height: 1.28;
+  max-width: 360px;
+  margin: 7px 0 0;
+  font-size: 12.2px;
+  line-height: 1.45;
 }
 
 .reviews-board .most-loved-grid {
