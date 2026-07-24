@@ -2766,10 +2766,10 @@ body.lightbox-open {
 }
 
 .story-review-card p {
-  padding-right: 22px;
-  color: rgba(33, 26, 28, 0.84);
-  font-size: 12px;
-  line-height: 1.36;
+  padding-right: 20px;
+  color: rgba(33, 26, 28, 0.9);
+  font-size: 13px;
+  line-height: 1.38;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
