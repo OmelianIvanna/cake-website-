@@ -473,6 +473,13 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
+function updateCompactNavigation() {
+  document.body.classList.toggle("nav-scrolled", window.scrollY > 24);
+}
+
+window.addEventListener("scroll", updateCompactNavigation, { passive: true });
+updateCompactNavigation();
+
 const flavourCategoryPages = [
   "biscuits.html",
   "popular.html",
@@ -604,6 +611,19 @@ if (storyReviewAlbum) {
   const albumImage = storyReviewAlbum.querySelector("img");
   const albumText = storyReviewAlbum.querySelector(".story-review-album-text");
   const albumClose = storyReviewAlbum.querySelector(".story-review-album-close");
+  document.body.appendChild(storyReviewAlbum);
+
+  function openStoryReviewAlbum(button) {
+    const language = supportedLanguages.includes(document.documentElement.lang) ? document.documentElement.lang : "en";
+    const textKey = button?.dataset.reviewText;
+    if (!albumImage || !albumText || !textKey) return;
+
+    albumImage.src = button.dataset.reviewImage || "";
+    albumText.textContent = translations[language][textKey] || translations.en[textKey] || "";
+    storyReviewAlbum.classList.add("is-open");
+    storyReviewAlbum.setAttribute("aria-hidden", "false");
+    document.body.classList.add("lightbox-open");
+  }
 
   function closeStoryReviewAlbum() {
     storyReviewAlbum.classList.remove("is-open");
@@ -616,16 +636,10 @@ if (storyReviewAlbum) {
   }
 
   document.querySelectorAll(".story-review-open").forEach((button) => {
-    button.addEventListener("click", () => {
-      const language = supportedLanguages.includes(document.documentElement.lang) ? document.documentElement.lang : "en";
-      const textKey = button.dataset.reviewText;
-      if (!albumImage || !albumText || !textKey) return;
-
-      albumImage.src = button.dataset.reviewImage || "";
-      albumText.textContent = translations[language][textKey] || translations.en[textKey] || "";
-      storyReviewAlbum.classList.add("is-open");
-      storyReviewAlbum.setAttribute("aria-hidden", "false");
-      document.body.classList.add("lightbox-open");
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      openStoryReviewAlbum(button);
     });
   });
 
@@ -637,16 +651,27 @@ if (storyReviewAlbum) {
     card.setAttribute("tabindex", "0");
 
     card.addEventListener("click", (event) => {
-      if (event.target.closest(".story-review-open")) return;
-      openButton.click();
+      event.preventDefault();
+      openStoryReviewAlbum(openButton);
     });
 
     card.addEventListener("keydown", (event) => {
       if (event.key !== "Enter" && event.key !== " ") return;
       event.preventDefault();
-      openButton.click();
+      openStoryReviewAlbum(openButton);
     });
   });
+
+  document.addEventListener("click", (event) => {
+    const openButton = event.target.closest(".story-review-open");
+    const card = event.target.closest(".story-review-card");
+    const trigger = openButton || card?.querySelector(".story-review-open");
+    if (!trigger) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+    openStoryReviewAlbum(trigger);
+  }, true);
 
   albumClose?.addEventListener("click", closeStoryReviewAlbum);
 
