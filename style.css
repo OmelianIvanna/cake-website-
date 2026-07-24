@@ -2671,7 +2671,8 @@ body.lightbox-open {
   margin: 0;
   padding: 10px;
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-rows: auto auto auto;
+  align-content: center;
   align-items: stretch;
   row-gap: 10px;
   background:
@@ -2701,7 +2702,7 @@ body.lightbox-open {
 .story-reviews-grid {
   display: grid;
   grid-template-columns: 1fr;
-  align-content: space-between;
+  align-content: start;
   gap: 8px;
 }
 
